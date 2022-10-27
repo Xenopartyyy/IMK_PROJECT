@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
   overflow-x: hidden;
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 50px;
 }
-/* navbar */
 nav {
   display: flex;
   background-color: #29ccd8;
@@ -16,19 +15,6 @@ nav {
   height: 60px;
   align-items: center;
   color: antiquewhite;
-}
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-  margin-right: 2em;
-}
-nav .logo span {
-  color: lightgreen;
-  font-weight: bolder;
-}
-nav .logo h4 {
-  font-weight: bolder;
 }
 nav .logo img {
   width: 53px;
@@ -39,9 +25,19 @@ nav ul {
   list-style: none;
   width: 40%;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
-
+nav .logo {
+  font-weight: 600;
+  margin-right: 2em;
+}
+nav .logo span {
+  color: lightgreen;
+  font-weight: bolder;
+}
+nav .logo h4 {
+  font-weight: bolder;
+}
 nav ul li a {
   color: antiquewhite;
   text-decoration: none;
@@ -57,12 +53,7 @@ nav ul li a:hover {
   transition: background ease-in-out;
   border-radius: 3px;
 }
-nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -70,6 +61,7 @@ nav .menu-btn i {
   justify-content: space-between;
   position: relative;
 }
+
 .menu-toggle input {
   position: absolute;
   width: 40px;
@@ -80,6 +72,7 @@ nav .menu-btn i {
   cursor: pointer;
   z-index: 2;
 }
+
 .menu-toggle span {
   display: block;
   width: 28px;
@@ -88,6 +81,7 @@ nav .menu-btn i {
   border-radius: 3px;
   transition: all 0.5s;
 }
+
 /* animasi */
 .menu-toggle span:nth-child(2) {
   transform-origin: 0 0;
@@ -105,6 +99,7 @@ nav .menu-btn i {
   opacity: 0;
   transform: scale(0);
 }
+
 /* responsive */
 @media screen and (max-width: 768px) {
   nav ul {
@@ -126,10 +121,10 @@ nav .menu-btn i {
     flex-direction: column;
     align-items: center;
     background-color: #29ccd8;
-    z-index: 3;
+    z-index: 1;
     transform: translate(100%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 3;
   }
 
   nav ul.slide {
@@ -137,29 +132,53 @@ nav .menu-btn i {
     transform: translateX(0);
   }
 }
-/* end navbar */
 
-.content1 {
+/* header */
+.header {
+  display: grid;
+  grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+}
+.hero {
+  grid-area: hero;
+  min-height: 350px;
+  background-image: url(bromo/images-bromo/bromo1-4-3.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+.hero h2,
+.hero p {
+  display: none;
+}
+.features {
+  background-color: black;
+  color: white;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  place-content: center;
   text-align: center;
-  align-items: center;
-  position: absolute;
+  cursor: pointer;
 }
-
-.abo {
-  background-color: rgb(240, 240, 240);
-  text-align: center;
-  align-items: center;
-  display: flex;
-  min-height: 569px;
-  height: 100%;
+.feature-1 {
+  grid-area: feature-1;
+  background-image: url(bromo/images-bromo/bromo4-custom.jpg);
+  background-position: 2px;
 }
-
-.carousel-caption {
-  margin-bottom: 200px;
+.feature-2 {
+  grid-area: feature-2;
+  background-image: url(bromo/images-bromo/bromo3.jpg);
+  background-size: cover;
 }
-
-.button :hover {
-  transition: ease-in-out;
-  opacity: 0.3;
-  background-color: white;
+.feature .price {
+  font-size: 3em;
+}
+@media (max-width: 1024px) {
+  .hero h2,
+  .hero p {
+    display: block;
+    background-color: black;
+  }
 }
