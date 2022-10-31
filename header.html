@@ -32,9 +32,19 @@
                <li><a href="#">Services</a></li>
                <li><a href="#">Gallery</a></li>
                <li><a href="#">Feedback</a></li>
-               <li><a href="#"><span class="material-symbols-outlined">
+               <li>
+                  <div class="btn-group">
+                     <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Log In</button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Sign In</a></li>
+                       <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                     </ul>
+                   </div>
+                  
+                  <!-- <a href="#"><span class="material-symbols-outlined">
                   person
-                  </span></a></li>
+                  </span></a> -->
+               </li>
             </ul>
             <div class="menu-toggle">
                <input type="checkbox" />
@@ -182,7 +192,10 @@
       </section>
 
       <script src="index.js"></script>
+      <!-- bs -->
       <script src="bs/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
          AOS.init();

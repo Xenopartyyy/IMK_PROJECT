@@ -175,10 +175,33 @@ nav ul li a:hover {
 .feature .price {
   font-size: 3em;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .hero h2,
   .hero p {
     display: block;
     background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
   }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    grid-template-areas:
+      "hero"
+      "feature-1"
+      "feature-2";
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
 }

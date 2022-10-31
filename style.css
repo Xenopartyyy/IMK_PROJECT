@@ -56,6 +56,7 @@ nav ul li a:hover {
   color: #29ccd8;
   transition: background ease-in-out;
   border-radius: 3px;
+  padding: 10px;
 }
 nav .menu-btn i {
   color: #fff;
@@ -162,4 +163,8 @@ nav .menu-btn i {
   transition: ease-in-out;
   opacity: 0.3;
   background-color: white;
+  padding: 15px;
+}
+.btn {
+  color: white;
 }
