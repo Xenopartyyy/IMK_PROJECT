@@ -139,6 +139,7 @@ nav ul li a:hover {
   grid-template-areas:
     "hero hero feature-1"
     "hero hero feature-2";
+  margin-top: 3.5em;
 }
 .hero {
   grid-area: hero;

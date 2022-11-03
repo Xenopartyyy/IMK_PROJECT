@@ -39,7 +39,7 @@ nav ul {
   list-style: none;
   width: 40%;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 nav ul li a {
@@ -107,12 +107,12 @@ nav .menu-btn i {
   transform: scale(0);
 }
 /* responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   nav ul {
     width: 50%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 820px) {
   .menu-toggle {
     display: flex;
   }
@@ -131,6 +131,13 @@ nav .menu-btn i {
     transform: translate(100%);
     transition: all 1s;
     opacity: 0;
+  }
+  nav ul li a:hover {
+    background: white;
+    color: #29ccd8;
+    transition: background ease-in-out;
+    border-radius: 3px;
+    padding: 5px;
   }
 
   nav ul.slide {
@@ -165,6 +172,8 @@ nav .menu-btn i {
   background-color: white;
   padding: 15px;
 }
-.btn {
-  color: white;
+.btn-group {
+  background-color: #fff;
+  margin-bottom: 1px;
+  margin-top: -3px;
 }
