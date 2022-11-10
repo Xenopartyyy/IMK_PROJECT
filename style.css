@@ -107,12 +107,12 @@ nav .menu-btn i {
   transform: scale(0);
 }
 /* responsive */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   nav ul {
     width: 50%;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1105px) {
   .menu-toggle {
     display: flex;
   }
@@ -143,6 +143,39 @@ nav .menu-btn i {
   nav ul.slide {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media screen and (min-width: 992px) {
+  #abo .card {
+    width: fit-content;
+  }
+  #abo .card-img-overlay {
+    margin-top: 24em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  #abo .card {
+    width: fit-content;
+  }
+  #abo .card-img-overlay {
+    margin-top: 15em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  #abo .card {
+    width: fit-content;
+  }
+  #abo .card-img-overlay {
+    margin-top: 15em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 0px) {
+  #abo .card-img-overlay {
+    margin-top: 7em;
+    text-align: center;
   }
 }
 /* end navbar */
@@ -221,9 +254,10 @@ nav .menu-btn i {
 .card {
   width: 18rem;
   margin: auto;
+  border: 0;
 }
 .card-img-overlay {
-  text-align: left;
+  text-align: center;
   margin-top: 7em;
 }
 .btn-info {
