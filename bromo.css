@@ -52,6 +52,7 @@ nav ul li a:hover {
   color: #29ccd8;
   transition: background ease-in-out;
   border-radius: 3px;
+  padding: 10px;
 }
 
 .menu-toggle {
@@ -101,12 +102,12 @@ nav ul li a:hover {
 }
 
 /* responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   nav ul {
     width: 50%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1105px) {
   .menu-toggle {
     display: flex;
   }

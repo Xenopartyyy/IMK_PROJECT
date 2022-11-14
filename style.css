@@ -39,7 +39,7 @@ nav ul {
   list-style: none;
   width: 40%;
   justify-content: space-between;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 
 nav ul li a {
@@ -88,6 +88,7 @@ nav .menu-btn i {
   background-color: antiquewhite;
   border-radius: 3px;
   transition: all 0.5s;
+  margin-left: 1em;
 }
 /* animasi */
 .menu-toggle span:nth-child(2) {
@@ -262,4 +263,8 @@ nav .menu-btn i {
 }
 .btn-info {
   padding: 2em;
+}
+#about-us .img-fluid {
+  width: auto;
+  height: auto;
 }
