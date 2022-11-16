@@ -203,7 +203,13 @@ nav ul li a:hover {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: auto;
   height: auto;
   border-radius: 10%;
+}
+#pesan .card {
+  margin-left: 7em;
+}
+#pesan .form {
+  margin-left: 10em;
 }
