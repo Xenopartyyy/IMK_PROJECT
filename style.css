@@ -140,3 +140,6 @@ body {
   width: 2em;
   letter-spacing: 3px;
 }
+#service .fa-solid {
+  color: aqua;
+}
