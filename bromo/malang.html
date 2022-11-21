@@ -21,7 +21,7 @@
 
     <script src="https://kit.fontawesome.com/1e719314bf.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="pesawat.png">
+    <link rel="icon" href="../pesawat.png">
     <title>Bromo trip</title>
   </head>
   <body>
@@ -50,8 +50,38 @@
     </nav>
     <!-- navbar -->
 
+    <!-- header -->
+    <section id="header">
+      <div id="London" class="tabcontent">
+        <h1>Jatim Park</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h1>Taman Selecta</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h1>Museum Angkut</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      
+      <div id="Oslo" class="tabcontent">
+        <h1>Bromo</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      
+      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Jatim Park</button>
+      <button class="tablink" onclick="openCity('Paris', this, 'green')">Selecta</button>
+      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Museum Angkut</button>
+      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Bromo</button>
+    </section>
+    
+    <!-- header -->
+
     <!-- hero -->
-    <div class="container">
+    <!-- <div class="container">
       <header class="header">
         <div class="hero">
           <h2 class="headling">Malang Trip</h2>
@@ -66,11 +96,11 @@
           <p class="item">4 Day 3 Night</p>
         </div>
       </header>
-    </div>
+    </div> -->
     <!-- hero -->
 
     <!-- isi -->
-    <section id="about-us">
+    <section id="why-malang">
       <div class="container">
         <div class="container text-start">
           <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5 m-3">
@@ -104,89 +134,77 @@
             <h2>Paket Wisata Malang</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5 m-3">
           <div class="col">
-            <div class="card mb-3" style="width: 30em;">
+            <div class="card mb-3" style="width: 25em;">
               <img src="../bromo/images-bromo/bromo1-4-3.jpg" class="card-img" alt="..." style="opacity: 0.5;">
               <div class="card-img-overlay">
-                <h4 class="card-title">1 Day Trip</h4>
-                <p>
-                  Start From<br>
-                  Rp 300.000
-                </p>
-                <p>Destinasi: 
-                <ul>
-                  <ul>Jatim Park</ul>
-                  <ul>Museum Angkut</ul>
-                  <ul>Kebun Apel</ul>
-                  <ul>Dll</ul>
-                </ul>
-                </p>
+                <h4 class="tittle">1 Day Trip</h4>
+                  <p>Start From <br> Rp 300.000
+                  <br> Destinasi: 
+                    <ul>
+                      <li>Jatim Park</li>
+                      <li>Museum Angkut</li>
+                      <li>Kebun Apel</li>
+                      <li>Dll</li>
+                    </ul>
+                  </p>
                 <a class="btn btn-warning" href="satuhari.html" role="button">Lihat Paket</a>
               </div>
             </div>
           </div>
           <div class="col mb-3">
-            <div class="card" style="width: 30em;">
+            <div class="card" style="width: 25em;">
               <img src="../bromo/images-bromo/bromo1-4-3.jpg" class="card-img" alt="..." style="opacity: 0.5;">
               <div class="card-img-overlay">
-                <h4 class="card-title">2 Day 1 Night Trip</h4>
-                <p>
-                  Start From<br>
-                  Rp 950.000
-                </p>
-                <p>Destinasi: 
-                <ul>
-                  <ul>Coban Rondo</ul>
-                  <ul>Museum Angkut</ul>
-                  <ul>Batu Night Spectacular</ul>
-                  <ul>Dll</ul>
-                </ul>
-                </p>
+                <h4 class="tittle">2 Day 1 Night</h4>
+                  <p>Start From <br> Rp 950.000
+                  <br> Destinasi: 
+                    <ul>
+                      <li>Jatim Park</li>
+                      <li>Museum Angkut</li>
+                      <li>Kebun Apel</li>
+                      <li>Dll</li>
+                    </ul>
+                  </p>
                 <a class="btn btn-warning" href="satuhari.html" role="button">Lihat Paket</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5 m-3">
           <div class="col">
-            <div class="card" style="width: 30em;">
+            <div class="card" style="width: 25em;">
               <img src="../bromo/images-bromo/bromo1-4-3.jpg" class="card-img" alt="..." style="opacity: 0.5;">
               <div class="card-img-overlay">
-                <h4 class="card-title">3 Day 2 Night Trip</h4>
-                <p>
-                  Start From<br>
-                  Rp 1.350.000
-                </p>
-                <p>Destinasi: 
-                <ul>
-                  <ul>Coban Rondo</ul>
-                  <ul>Museum Angkut</ul>
-                  <ul>Batu Night Spectacular</ul>
-                  <ul>Dll</ul>
-                </ul>
-                </p>
+                <h4 class="tittle">3 Day 2 Night </h4>
+                  <p>Start From <br> Rp 1.350.000
+                  <br> Destinasi: 
+                    <ul>
+                      <li>Jatim Park</li>
+                      <li>Museum Angkut</li>
+                      <li>Kebun Apel</li>
+                      <li>Dll</li>
+                    </ul>
+                  </p>
                 <a class="btn btn-warning" href="satuhari.html" role="button">Lihat Paket</a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 30em;">
+            <div class="card" style="width: 25em;">
               <img src="../bromo/images-bromo/bromo1-4-3.jpg" class="card-img" alt="..." style="opacity: 0.5;">
               <div class="card-img-overlay">
-                <h4 class="card-title">5 Day 4 Night Trip</h4>
-                <p>
-                  Start From<br>
-                  Rp 1.780.000
-                </p>
-                <p>Destinasi: 
-                <ul>
-                  <ul>Coban Rondo</ul>
-                  <ul>Museum Angkut</ul>
-                  <ul>Batu Night Spectacular</ul>
-                  <ul>Dll</ul>
-                </ul>
-                </p>
+                <h4 class="tittle">4 Day 3 Night </h4>
+                  <p>Start From <br> Rp 1.780.000
+                  <br> Destinasi: 
+                    <ul>
+                      <li>Jatim Park</li>
+                      <li>Museum Angkut</li>
+                      <li>Kebun Apel</li>
+                      <li>Dll</li>
+                    </ul>
+                  </p>
                 <a class="btn btn-warning" href="satuhari.html" role="button">Lihat Paket</a>
               </div>
             </div>
@@ -407,7 +425,7 @@
     <!-- aos -->
 
     <!-- js -->
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <!-- js -->
 
     <!-- Bs -->

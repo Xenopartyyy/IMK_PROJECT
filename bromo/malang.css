@@ -88,3 +88,61 @@ body {
 #pesan .form {
   margin-left: 10em;
 }
+
+#menu .card {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* header */
+/* Style the tab buttons */
+#header {
+  margin-top: 5em;
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10em;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#London {
+  background-image: url(/bromo/images-malang/jatimpark1-16-9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85em;
+}
+#Paris {
+  background-color: green;
+}
+#Tokyo {
+  background-color: blue;
+}
+#Oslo {
+  background-color: orange;
+}
+/* header */
+
+#why-malang {
+  margin-top: 5em;
+}
