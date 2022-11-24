@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
 }
+
 /* responsive */
 @media screen and (min-width: 992px) {
   #abo .card {
@@ -62,6 +63,7 @@ body {
   display: flex;
   min-height: 569px;
   height: 100%;
+  padding-bottom: 1.5em;
 }
 
 .carousel {
@@ -140,6 +142,67 @@ body {
   width: 2em;
   letter-spacing: 3px;
 }
+#about-us {
+  background-color: rgb(240, 240, 240);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 #service .fa-solid {
   color: aqua;
+}
+#artikel {
+  background-color: rgb(240, 240, 240);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* about */
+div.box {
+  width: 457px;
+  height: 450px;
+  background: url(img/nightsky.jpg);
+  background-size: cover;
+  position: absolute;
+  /* margin-left: 830px;
+	margin-top: 765px; */
+  display: inline-block;
+  /* border: 5px solid black; */
+}
+
+div.mu {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: url(images/earthtown.png);
+  background-size: cover;
+  margin: 5px;
+  position: absolute;
+  animation: orbit 30s linear infinite;
+}
+
+div.ki {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 100%;
+  margin: 100px 99px;
+  animation: orbit 5s linear infinite;
+}
+
+div.orbit {
+  margin-left: -100px;
+  margin-top: -100px;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  background: url(images/plane.png);
+  background-size: cover;
+  border-radius: 100%;
+  transform: rotate(-50deg);
+}
+
+@keyframes orbit {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
