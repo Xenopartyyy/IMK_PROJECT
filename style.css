@@ -206,3 +206,17 @@ div.orbit {
     transform: rotate(-360deg);
   }
 }
+
+#testimoni img {
+  width: 200px;
+  border-radius: 100%;
+  margin-bottom: -3em;
+}
+
+#testimoni .card {
+  z-index: -3;
+}
+
+#testimoni .fa-solid {
+  color: yellow;
+}

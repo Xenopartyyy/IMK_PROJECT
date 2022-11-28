@@ -1,0 +1,14 @@
+img {
+  width: 200px;
+  border-radius: 100%;
+  margin-bottom: -3em;
+}
+
+.card {
+  z-index: -3;
+}
+.card-footer {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5em;
+}
