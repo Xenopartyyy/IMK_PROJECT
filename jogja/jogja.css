@@ -20,7 +20,7 @@ body {
 .hero {
   grid-area: hero;
   min-height: 350px;
-  background-image: url(images-bromo/bromo1-4-3.jpg);
+  background-image: url(image-jogja/jogja1.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -34,19 +34,19 @@ body {
   color: white;
   display: grid;
   /* justify-content: center;
-  align-items: center; */
+    align-items: center; */
   place-content: center;
   text-align: center;
   cursor: pointer;
 }
 .feature-1 {
   grid-area: feature-1;
-  background-image: url(images-malang/jatimpark1.jpg);
+  background-image: url(image-jogja/jogja2-16-9.jpg);
   background-position: center;
 }
 .feature-2 {
   grid-area: feature-2;
-  background-image: url(images-bromo/bromo3.jpg);
+  background-image: url(image-jogja/jogja3-16-9.jpg);
   background-size: cover;
 }
 .feature .price {
@@ -76,12 +76,13 @@ body {
       "feature-2";
   }
 }
-
+/* header */
 .img-fluid {
   width: auto;
   height: auto;
   border-radius: 10%;
 }
+
 #pesan .card {
   margin-left: 7em;
 }
