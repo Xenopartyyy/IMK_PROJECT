@@ -63,7 +63,7 @@ body {
   display: flex;
   min-height: 569px;
   height: 100%;
-  padding-bottom: 1.5em;
+  padding-bottom: 5em;
 }
 
 .carousel {
@@ -125,10 +125,11 @@ div.box {
   height: 450px;
   background: url(img/nightsky.jpg);
   background-size: cover;
-  position: absolute;
+  /* position: absolute; */
   /* margin-left: 830px;
 	margin-top: 765px; */
   display: inline-block;
+  margin: 3em;
   /* border: 5px solid black; */
 }
 
@@ -178,6 +179,7 @@ div.orbit {
 
 #testimoni .card {
   z-index: -3;
+  margin-bottom: 5em;
 }
 
 #testimoni .fa-solid {

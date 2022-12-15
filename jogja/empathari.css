@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 50px;
+}
+/* disclaimer */
+#warning {
+  margin-top: 5em;
+}
+#warning mark {
+  background-color: #11b0bb;
+  color: #ffff;
+}
+#warning p {
+  font-size: larger;
+  font-weight: 500;
+  line-height: 2;
+}
+/* disclaimer */
+/* pesan */
+#pesan {
+  margin-top: 5em;
+}
+.img-fluid {
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+}
+/* #pesan .card {
+  margin-left: auto;
+} */
+#pesan .form {
+  margin-left: auto;
+}
+
+#menu .card {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+#pesan .mark {
+  font-size: large;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  color: #ffff;
+  font-weight: 500;
+  text-align: center;
+}
+/* pesan */
+.container {
+  margin: auto;
+}
+/* responsif */
+@media screen {
+}
+/* responsif */
