@@ -12,8 +12,8 @@ html {
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
-  color: #2f2f2f;
-  background-color: #077f87;
+  color: #3bbbb0;
+  background-color: #202020;
   /* background-color: rgb(190, 193, 194); */
   border-top: 1px solid #e5e5e5;
 }
@@ -47,7 +47,7 @@ html {
 
 .footer address {
   font-style: normal;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .footer__btn {
@@ -56,9 +56,9 @@ html {
   justify-content: center;
   height: 36px;
   max-width: max-content;
-  background-color: rgb(33, 33, 33, 0.07);
+  background-color: rgba(255, 255, 255, 0.07);
   border-radius: 100px;
-  color: #2f2f2f;
+  color: #3bbbb0;
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
@@ -89,7 +89,7 @@ html {
 }
 
 .nav__ul a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .nav__ul--extra {
@@ -100,7 +100,7 @@ html {
 .legal {
   display: flex;
   flex-wrap: wrap;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .legal__links {
@@ -109,7 +109,7 @@ html {
 }
 
 .heart {
-  color: #2f2f2f;
+  color: #ff0000;
 }
 
 @media screen and (min-width: 24.375em) {

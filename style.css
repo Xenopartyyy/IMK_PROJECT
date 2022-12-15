@@ -81,44 +81,6 @@ body {
   margin-bottom: 1px;
   margin-top: -3px;
 }
-
-/* bagian paket */
-/* .abo {
-  display: grid;
-  grid-template-areas:
-    "hero hero feature-1"
-    "hero hero feature-2";
-  margin-top: 1.5em;
-}
-.features {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 0 5px !important;
-  min-height: 155px !important;
-  padding: 15px !important;
-  justify-content: flex-end;
-  width: 100%;
-  /* justify-content: center;
-  align-items: center; */
-/* place-content: center;
-  text-align: center;
-  cursor: pointer;
-}
-.feature-1 {
-  grid-area: feature-1;
-  background-image: url(bromo/images-bromo/bromo4-custom.jpg);
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1em;
-}
-.feature-2 {
-  grid-area: feature-2;
-  background-image: url(bromo/images-bromo/bromo3.jpg);
-  background-size: cover;
-} */
 .abo {
   margin-bottom: 10em;
 }
@@ -147,10 +109,11 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 #service .fa-solid {
   color: aqua;
 }
-#artikel {
+#gal {
   background-color: rgb(240, 240, 240);
   padding-top: 1em;
   padding-bottom: 1em;
@@ -220,3 +183,14 @@ div.orbit {
 #testimoni .fa-solid {
   color: yellow;
 }
+
+/* LEZRENT START */
+#lezrent .container {
+  margin-bottom: 5em;
+}
+
+#lezrent .container h3 {
+  padding: 2em;
+  text-align: center;
+}
+/* LEZRENT ENDS */
