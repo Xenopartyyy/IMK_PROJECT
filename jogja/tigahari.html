@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="tigahari.css" />
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+        <!-- font google -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+        <script src="https://kit.fontawesome.com/1e719314bf.js" crossorigin="anonymous"></script>
+    
+        <link rel="icon" href="../pesawat.png">
+
     <title>Jogja | 3D2N</title>
   </head>
   <body>
@@ -21,7 +32,7 @@
       </div>
       <ul>
         <li><a href="../header.html">Home</a></li>
-        <li><a href="/bromo/malang.html">Back</a></li>
+        <li><a href="jogja.html">Back</a></li>
         <!-- <li><a href="#destinasi">Destination</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Review</a></li> -->
@@ -44,9 +55,10 @@
     <!-- disclaimer -->
     <!-- pesen -->
     <section id="pesan">
-        <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5 m-3">
-          <div class="col">
-            <div class="card" style="width: 40rem;">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="card" style="width: auto;">
               <img src="image-jogja/jogja1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="d-grid gap-2">
@@ -187,40 +199,136 @@
                 </div>
                 </div>
               </div>
-            </div>
-  
-            <!-- form -->        
-          <div class="form col-lg-4">
-            <h3>Form Resservasi</h3>
+          </div>
+          <!-- form -->
+          <div class="col-sm-4">
+            <div class="form">
+                <h3>Form Resservasi</h3>
             <div class="mb-3">
               <label for="nama" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="nama">
+              <input type="text" class="form-control" id="nama" required/>
             </div>
             <div class="mb-3">
               <label for="nohp" class="form-label">Wa/Telp</label>
-              <input type="number" class="form-control" id="nohp" rows="3"></input>
+              <input type="tel" class="form-control" id="nohp" rows="3" required/>
               <p>Masukkan no wa/telp aktif digunakan untuk konfirmasi pesanan</p>
             </div>
             <div class="mb-3">
               <label for="peserta" class="form-label">Jumlah Peserta</label>
-              <input type="text" class="form-control" id="nama">
+              <input type="text" class="form-control" id="jml" required/>
             </div>
             <div class="mb-3">
               <label for="peserta" class="form-label">Tanggal Trip</label>
-              <input type="date" class="form-control" id="nama">
+              <input type="date" class="form-control" id="tgl" required/>
             </div>
             <div class="mb-3">
               <label for="catatan" class="form-label">Catatan</label>
               <textarea class="form-control" id="catatan" rows="3"></textarea>
             </div>
-            <a class="btn btn-primary align-content-center" href="#" role="button">Pesan</a>
+            <!-- Button -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Pesan
+            </button>
+      
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pemberitahuan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    data berhasil disimpan anda akan di hubungi oleh pihak admin kami melalui whatsapp mengenai keterangan perjalanan bla bla bla
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>     
+            </div>
+            <div class="list-group list-group-flush mt-5">
+              <h3>Wisata Lainnya</h3>
+              <a href="../bromo/malang.html" class="list-group-item">Malang Trip</a>
+              <a href="../bromo/malang.html" class="list-group-item">Bali Trip</a>
+              <a href="../bromo/malang.html" class="list-group-item">Dieng Trip</a>
+              <a href="../bromo/malang.html" class="list-group-item">Labuan Bajo Trip</a>
+              <a href="../bromo/malang.html" class="list-group-item">Lombok Trip</a>
+            </div>
           </div>
-        </div>
-        </section>  
-        <!-- /form -->
+        </div>    
+      </div>
+        </section> 
+        
+ <!-- Footer -->
+ <section id="footer">
+  <footer class="footer">
+    <link rel="stylesheet" href="../footer.css">
+    <div class="footer__addr">
+      <div class="logo">
+        <h4>
+          LeZ<span>GO</span>
+          <img src="../pesawat.png" alt="logo lezgo" />
+        </h4>
+      </div>
+ 
+       <h2>Contact</h2>
+ 
+       <address>
+        JL. Karawaci Baru no.19 Kabupaten Tangerang, Banten<br>
+ 
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+       </address>
+    </div>
+ 
+    <ul class="footer__nav">
+       <li class="nav__item">
+          <h2 class="nav__title">Sosial Media</h2>
+ 
+          <ul class="nav__ul mb-3">
+            <li>
+              <a href="https://www.instagram.com/lezgotravel.id/?igshid=ZmVmZTY5ZGE%3D"><i class="fa-brands fa-instagram fa-2x m-2"></i></a>
+               <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </li>
+         </ul>
+       </li>
+ 
+       <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+ 
+          <ul class="nav__ul">
+             <li>
+                <a href="our-team/team.html">Our Team</a>
+             </li>
+ 
+             <li>
+                <a href="#">Terms of Use</a>
+             </li>
+ 
+             <li>
+                <a href="#">Sitemap</a>
+             </li>
+          </ul>
+       </li>
+    </ul>
+ 
+    <div class="legal">
+       <p>&copy; 2022 LeZGO. All rights reserved.</p>
+ 
+       <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> by HelloWorld</span>
+       </div>
+    </div>
+ </footer>
+</section>  
+<!-- Footer -->
+
 
     <!-- Bs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- Bs -->
+    <script src="index.js"></script>
   </body>
 </html>

@@ -91,9 +91,7 @@ body {
 }
 
 #menu .card {
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
+  justify-items: center;
 }
 
 #why-malang {

@@ -33,12 +33,12 @@ body {
   height: auto;
   border-radius: 10%;
 }
-#pesan .card {
+/* #pesan .card {
   margin-left: 7em;
 }
 #pesan .form {
   margin-left: 10em;
-}
+} */
 
 #menu .card {
   justify-content: center;
@@ -55,3 +55,23 @@ body {
 }
 
 /* pesan */
+@media screen and (max-width: 760px) {
+  #pesan .form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 520px;
+  }
+  #pesan .list-group {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #pesan .form {
+    width: 380px;
+    margin-left: 1em;
+  }
+  #pesan .list-group {
+    width: 380px;
+    margin-left: 1em;
+  }
+}

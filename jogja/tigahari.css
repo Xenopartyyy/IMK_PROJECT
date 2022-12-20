@@ -23,21 +23,11 @@ body {
 }
 /* disclaimer */
 /* pesan */
-#pesan {
-  margin-top: 5em;
-}
 .img-fluid {
   width: auto;
   height: auto;
   border-radius: 10%;
 }
-#pesan .card {
-  margin-left: 7em;
-}
-#pesan .form {
-  margin-left: 10em;
-}
-
 #menu .card {
   justify-content: center;
   align-items: center;
@@ -52,3 +42,24 @@ body {
   text-align: center;
 }
 /* pesan */
+/* responsive */
+@media screen and (max-width: 760px) {
+  #pesan .form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 520px;
+  }
+  #pesan .list-group {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #pesan .form {
+    width: 380px;
+    margin-left: 1em;
+  }
+  #pesan .list-group {
+    width: 380px;
+    margin-left: 1em;
+  }
+}
