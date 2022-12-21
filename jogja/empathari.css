@@ -37,6 +37,9 @@ body {
   align-items: left;
   margin-left: auto;
 }
+/* form {
+  width: auto;
+} */
 #pesan .mark {
   font-size: large;
   background-color: #0d6efd;
@@ -47,8 +50,8 @@ body {
 }
 /* pesan */
 /* responsive */
-@media screen and (max-width: 760px) {
-  #pesan .form {
+@media screen and (max-width: 768px) {
+  #pesan form {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 520px;
@@ -58,12 +61,22 @@ body {
   }
 }
 @media screen and (max-width: 540px) {
-  #pesan .form {
+  #pesan form {
     width: 380px;
     margin-left: 1em;
   }
   #pesan .list-group {
     width: 380px;
+    margin-left: 1em;
+  }
+}
+@media screen and (min-width: 0px) {
+  #pesan form {
+    width: auto;
+    margin-left: 1em;
+  }
+  #pesan .list-group {
+    width: auto;
     margin-left: 1em;
   }
 }

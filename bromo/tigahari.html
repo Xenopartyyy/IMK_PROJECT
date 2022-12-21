@@ -35,7 +35,7 @@
       </div>
         <ul>
           <li><a href="../header.html">Home</a></li>
-          <li><a href="/bromo/malang.html">Back</a></li>
+          <li><a href="malang.html">Back</a></li>
           <!-- <li><a href="#destinasi">Destination</a></li>
           <li><a href="">Gallery</a></li>
           <li><a href="">Review</a></li> -->
@@ -62,7 +62,7 @@
     <section id="pesan">
       <div class="container mb-5">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
             <div class="card" style="width: auto;">
               <img src="../bromo/images-malang/angkut.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -173,53 +173,89 @@
                 </div>
               </div>
           </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="form">
+                <form>
                   <h3>Form Resservasi</h3>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" required/>
-              </div>
-              <div class="mb-3">
-                <label for="nohp" class="form-label">Wa/Telp</label>
-                <input type="tel" class="form-control" id="nohp" rows="3" required/>
-                <p>Masukkan no wa/telp aktif digunakan untuk konfirmasi pesanan</p>
-              </div>
-              <div class="mb-3">
-                <label for="peserta" class="form-label">Jumlah Peserta</label>
-                <input type="text" class="form-control" id="jml" required/>
-              </div>
-              <div class="mb-3">
-                <label for="peserta" class="form-label">Tanggal Trip</label>
-                <input type="date" class="form-control" id="tgl" required/>
-              </div>
-              <div class="mb-3">
-                <label for="catatan" class="form-label">Catatan</label>
-                <textarea class="form-control" id="catatan" rows="3"></textarea>
-              </div>
-              <!-- Button -->
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Pesan
-              </button>
-        
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Pemberitahuan</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      data berhasil disimpan anda akan di hubungi oleh pihak admin kami melalui whatsapp mengenai keterangan perjalanan bla bla bla
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" required/>
                   </div>
-                </div>
-              </div>     
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Jenis Kelamin</label>
+                    <br>
+                    <p>
+                      <input type="radio" name="sex" id="jkl" value="pria"> Pria
+                      <input type="radio" name="sex" id="jkp" value="wanita"> Wanita
+                    </p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nohp" class="form-label">Wa/Telp</label>
+                    <input type="number" class="form-control" id="nohp" rows="3" required/>
+                    <p>Masukkan no wa/telp aktif digunakan untuk konfirmasi pesanan</p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nohp" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="nohp" rows="3" placeholder="example@mail.com" required/>
+                    <p>Masukkan alamat email aktif untuk konfirmasi pesanan</p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="paket" class="form-label">Paket Perjalanan</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Mau Berapa Hari Nih?</option>
+                      <option value="1">Paket A (3 hari 2 Malam)</option>
+                      <option value="2">Paket B (3 Hari 2 Malam)</option>
+                      <option value="3">Paket Awesome (4 Hari 3 Malam)</option>
+                      <option value="4">Custom</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="peserta" class="form-label">Jumlah Peserta</label>
+                    <input type="number" class="form-control" id="jml" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="peserta" class="form-label">Tanggal Trip</label>
+                    <input type="date" class="form-control" id="tgl" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Ingin Menggunakan LeZRent?</label>
+                    <br>
+                    <!-- <a class="form-check-label" data-bs-toggle="collapse" href="#lezrent" aria-expanded="false" aria-controls="lezrent" type="radio" name="lr" id="yes">
+                    </a>  -->
+                      <input data-bs-toggle="collapse" href="#lezrent" aria-expanded="false" aria-controls="lezrent" type="radio" name="lr" id="yes"> 
+                      Yes
+                    <input type="radio" name="lr" id="no"/> No
+                  </div>
+                  <!-- form lezrent -->
+                  <div class="collapse" id="lezrent">
+                      <div class="mb-3">
+                        <label for="jenis-kendaraan" class="form-label">Jenis Kendaraan</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Mau Pakai Apa Nih?</option>
+                          <option value="1">Mobil</option>
+                          <option value="2">Elf</option>
+                          <option value="3">Medium Bus</option>
+                          <option value="4">Big Bus</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="jumlah-unit" class="form-label">Jumlah Unit yang disewa</label>
+                        <input type="number" class="form-control" id="nama" required/>
+                      </div>
+                      <div class="mb-3">
+                        <label for="durasi" class="form-label">Mulai Sewa</label>
+                        <input type="date" class="form-control mb-3" id="nama" required/>
+                        <label for="durasi" class="form-label">Pengembalian</label>
+                        <input type="date" class="form-control" id="nama" required/>
+                      </div>
+                  </div>
+                  <!-- form lezrent -->
+                  <div class="mb-3">
+                    <label for="catatan" class="form-label">Catatan (optional)</label>
+                    <textarea class="form-control" id="catatan" rows="3"></textarea>
+                  </div>
+              <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
               </div>
               <div class="list-group list-group-flush mt-5">
                 <h3>Wisata Lainnya</h3>
