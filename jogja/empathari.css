@@ -50,6 +50,11 @@ body {
 }
 /* pesan */
 /* responsive */
+@media screen and (max-width: 992px) {
+  form {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   #pesan form {
     margin-top: 20px;
