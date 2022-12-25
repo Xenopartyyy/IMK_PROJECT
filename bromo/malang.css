@@ -76,6 +76,11 @@ body {
       "feature-2";
   }
 }
+@media screen and (max-width: 476px) {
+  #menu .destinasi {
+    display: none;
+  }
+}
 
 .img-fluid {
   width: auto;

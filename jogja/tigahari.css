@@ -11,17 +11,16 @@ body {
 /* disclaimer */
 #warning {
   margin-top: 5em;
+  background-color: yellow;
+  margin: 90px 30px;
+  border-radius: 60px;
 }
-#warning mark {
-  background-color: #11b0bb;
-  color: #ffff;
-}
+
 #warning p {
   font-size: larger;
   font-weight: 500;
   line-height: 2;
 }
-/* disclaimer */
 /* pesan */
 .img-fluid {
   width: auto;

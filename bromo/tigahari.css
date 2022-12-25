@@ -12,17 +12,16 @@ body {
 /* disclaimer */
 #warning {
   margin-top: 5em;
+  background-color: yellow;
+  margin: 90px 30px;
+  border-radius: 60px;
 }
-#warning mark {
-  background-color: #11b0bb;
-  color: #ffff;
-}
+
 #warning p {
   font-size: larger;
   font-weight: 500;
   line-height: 2;
 }
-/* disclaimer */
 
 /* pesan */
 #pesan {
@@ -33,12 +32,6 @@ body {
   height: auto;
   border-radius: 10%;
 }
-/* #pesan .card {
-  margin-left: 7em;
-}
-#pesan .form {
-  margin-left: 10em;
-} */
 
 #menu .card {
   justify-content: center;
@@ -55,6 +48,11 @@ body {
 }
 
 /* pesan */
+@media screen and (max-width: 992px) {
+  #pesan form {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   #pesan form {
     margin-top: 20px;

@@ -19,8 +19,8 @@ body {
 }
 .hero {
   grid-area: hero;
+  background-image: url(images-lombok/Foto5.jpg);
   min-height: 350px;
-  background-image: url(image-jogja/jogja1.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -33,20 +33,18 @@ body {
   background-color: black;
   color: white;
   display: grid;
-  /* justify-content: center;
-    align-items: center; */
   place-content: center;
   text-align: center;
   cursor: pointer;
 }
 .feature-1 {
   grid-area: feature-1;
-  background-image: url(image-jogja/jogja2-16-9.jpg);
-  background-position: center;
+  background-image: url(images-lombok/Foto6.jpg);
+  background-position: bottom;
 }
 .feature-2 {
   grid-area: feature-2;
-  background-image: url(image-jogja/jogja3-16-9.jpg);
+  background-image: url(images-lombok/Foto7.jpg);
   background-size: cover;
 }
 .feature .price {
@@ -81,13 +79,12 @@ body {
     display: none;
   }
 }
-/* header */
+
 .img-fluid {
   width: auto;
   height: auto;
   border-radius: 10%;
 }
-
 #pesan .card {
   margin-left: 7em;
 }
@@ -96,9 +93,11 @@ body {
 }
 
 #menu .card {
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
-#why-jogja {
+#why-lombok {
   margin-top: 5em;
 }

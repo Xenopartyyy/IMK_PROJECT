@@ -23,6 +23,9 @@ body {
   line-height: 2;
 }
 
+
+/* disclaimer */
+
 /* pesan */
 #pesan {
   margin-top: 5em;
@@ -30,14 +33,7 @@ body {
 .img-fluid {
   width: auto;
   height: auto;
-  border-radius: 10%;
 }
-/* #pesan .card {
-  margin-left: 7em;
-}
-#pesan .form {
-  margin-left: 10em;
-} */
 
 #menu .card {
   justify-content: center;
@@ -52,12 +48,8 @@ body {
   font-weight: 500;
   text-align: center;
 }
+
 /* pesan */
-@media screen and (max-width: 992px) {
-  #pesan form {
-    margin-top: 20px;
-  }
-}
 @media screen and (max-width: 768px) {
   #pesan form {
     margin-top: 20px;
