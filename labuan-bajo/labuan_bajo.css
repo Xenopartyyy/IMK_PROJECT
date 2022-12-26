@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 50px;
+}
+
+/* header */
+.header {
+  display: grid;
+  grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+  margin-top: 5em;
+}
+.hero {
+  grid-area: hero;
+  min-height: 350px;
+  background-image: url(images-labuan/pasangan.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+.hero h2,
+.hero p {
+  display: none;
+}
+.features {
+  background-color: black;
+  color: white;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  place-content: center;
+  text-align: center;
+}
+.feature-1 {
+  grid-area: feature-1;
+  background-image: url(images-labuan/wae_rebo.jpg);
+  background-position: center;
+}
+.feature-2 {
+  grid-area: feature-2;
+  background-image: url(images-labuan/komodo.jpg);
+  background-size: cover;
+}
+.feature .price {
+  font-size: 3em;
+}
+@media (max-width: 768px) {
+  .hero h2,
+  .hero p {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    grid-template-areas:
+      "hero"
+      "feature-1"
+      "feature-2";
+  }
+}
+@media screen and (max-width: 476px) {
+  #menu .destinasi {
+    display: none;
+  }
+}
+
+.img-fluid {
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+}
+#pesan .card {
+  margin-left: 7em;
+}
+#pesan .form {
+  margin-left: 10em;
+}
+
+#menu .card {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+#why-NTT {
+  margin-top: 5em;
+}
