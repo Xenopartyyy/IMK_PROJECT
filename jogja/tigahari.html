@@ -220,85 +220,84 @@
           </div>
           <!-- form -->
           <div class="col-lg-4">
-            <form>
-              <h3>Form Reservasi</h3>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" required/>
-              </div>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Jenis Kelamin</label>
-                <br>
-                <p>
-                  <input type="radio" name="sex" id="jkl" value="pria"> Pria
-                  <input type="radio" name="sex" id="jkp" value="wanita"> Wanita
-                </p>
-              </div>
-              <div class="mb-3">
-                <label for="nohp" class="form-label">Wa/Telp</label>
-                <input type="tel" class="form-control" id="nohp" rows="3" required/>
-                <p>Masukkan no wa/telp aktif digunakan untuk konfirmasi pesanan</p>
-              </div>
-              <div class="mb-3">
-                <label for="nohp" class="form-label">Email</label>
-                <input type="email" class="form-control" id="nohp" rows="3" placeholder="example@mail.com" required/>
-                <p>Masukkan alamat email aktif untuk konfirmasi pesanan</p>
-              </div>
-              <div class="mb-3">
-                <label for="paket" class="form-label">Paket Perjalanan</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Mau Berapa Hari Nih?</option>
-                  <option value="1">Paket A (3 hari 2 Malam)</option>
-                  <option value="2">Paket B (3 Hari 2 Malam)</option>
-                  <option value="3">Paket Wonderful (4 Hari 3 Malam)</option>
-                  <option value="4">Custom</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="peserta" class="form-label">Jumlah Peserta</label>
-                <input type="number" class="form-control" id="jml" required/>
-              </div>
-              <div class="mb-3">
-                <label for="peserta" class="form-label">Tanggal Trip</label>
-                <input type="date" class="form-control" id="tgl" required/>
-              </div>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Ingin Menggunakan LeZRent?</label>
-                <br>
-                  <input data-bs-toggle="collapse" href="#lezrent" aria-expanded="false" aria-controls="lezrent" type="radio" name="lr" id="yes"> 
-                  Yes
-                <input data-bs-toggle="collapse" aria-expanded="true" href="#lezrent"  type="radio" name="lr" id="no"/> No
-              </div>
-              <!-- form lezrent -->
-              <div class="collapse" id="lezrent">
-                  <div class="mb-3">
-                    <label for="jenis-kendaraan" class="form-label">Jenis Kendaraan</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Mau Pakai Apa Nih?</option>
-                      <option value="1">Motor</option>
-                      <option value="2">Mobil</option>
-                      <option value="3">Elf</option>
-                      <option value="4">Bus</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="jumlah-unit" class="form-label">Jumlah Unit yang disewa</label>
-                    <input type="number" class="form-control" id="nama" required/>
-                  </div>
-                  <div class="mb-3">
-                    <label for="durasi" class="form-label">Mulai Sewa</label>
-                    <input type="date" class="form-control mb-3" id="nama" required/>
-                    <label for="durasi" class="form-label">Pengembalian</label>
-                    <input type="date" class="form-control" id="nama" required/>
-                  </div>
-              </div>
-              <!-- form lezrent -->
-              <div class="mb-3">
-                <label for="catatan" class="form-label">Catatan (optional)</label>
-                <textarea class="form-control" id="catatan" rows="3"></textarea>
-              </div>
-          <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
+            <div class="alert-info" id="liveAlertPlaceholder">
+            </div>
+            <div class="form">
+              <form>
+                <h3>Form Reservasi</h3>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" 
+                  name="nama" id="nama" placeholder="nama" required>
+                  <label for="nama">Name</label>
+                </div>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Jenis Kelamin</label>
+                  <br>
+                  <p>
+                    <input type="radio" name="sex" id="jkl" value="pria"> Pria
+                    <input type="radio" name="sex" id="jkp" value="wanita"> Wanita
+                  </p>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control"
+                  name="telepon" id="telepon" placeholder="telepon" required>
+                  <label for="telepon">WA / Telepon</label>
+                  <small>Masukkan no wa/telp aktif digunakan untuk konfirmasi pesanan</small> 
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control"
+                  name="email" id="email" placeholder="email" required>
+                  <label for="email">Email</label>
+                  <small>Masukkan alamat email aktif untuk konfirmasi pesanan</small>
+                </div>
+                <div class="mb-3">
+                  <label for="paket" class="form-label">Paket Perjalanan</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Mau Berapa Hari Nih?</option>
+                    <option value="1">Paket 3 hari 2 Malam</option>
+                    <option value="2">Paket 4 Hari 3 Malam</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="peserta" class="form-label">Jumlah Peserta</label>
+                  <input type="number" class="form-control" id="jml" required/>
+                </div>
+                <div class="mb-3">
+                  <label for="peserta" class="form-label">Tanggal Trip</label>
+                  <input type="date" class="form-control" id="tgl" required/>
+                </div>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Ingin Menggunakan LeZRent?</label>
+                  <br> 
+                    <input type="radio" name="lr" id="yes" onclick="handleOpen()" /> 
+                    Yes
+                  <input type="radio" name="lr" id="no"  onclick="handleClose()"/> No
+                </div>
+                <!-- form lezrent -->
+                <div class="collapse" id="lezrent">
+                    <div class="mb-3">
+                      <label for="jenis-kendaraan" class="form-label">Jenis Kendaraan</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Mau Pakai Apa Nih?</option>
+                        <option value="1">Mobil - Rp 1.000.000</option>
+                        <option value="2">Motor - Rp 350.000</option>
+                        <option value="3">Elf - Rp 1.250.000</option>
+                        <option value="4">Bus - Rp 1.750.000</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="jumlah-unit" class="form-label">Jumlah Unit yang disewa</label>
+                      <input type="number" class="form-control" id="nama" required/>
+                    </div>
+                </div>
+                <!-- form lezrent -->
+                <div class="mb-3">
+                  <label for="catatan" class="form-label">Catatan (optional)</label>
+                  <textarea class="form-control" id="catatan" rows="3"></textarea>
+                </div>
+            <button class="btn btn-primary" type="submit" id="liveAlertBtn">Submit form</button>
+              </form>
+            </div>
             <div class="list-group list-group-flush mt-5">
               <h3>Wisata Lainnya</h3>
               <a href="../bromo/malang.html" class="list-group-item">Malang Trip</a>
@@ -312,8 +311,8 @@
       </div>
     </section> 
         
- <!-- Footer -->
- <section id="footer">
+<!-- Footer -->
+<section id="footer">
   <footer class="footer">
     <link rel="stylesheet" href="../footer.css">
     <div class="footer__addr">
@@ -329,7 +328,7 @@
        <address>
         JL. Karawaci Baru no.19 Kabupaten Tangerang, Banten<br>
  
-          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          <a class="footer__btn" href="mailto:lezgotravel.id@gmail.com">Email Us</a>
        </address>
     </div>
  
@@ -340,7 +339,7 @@
           <ul class="nav__ul mb-3">
             <li>
               <a href="https://www.instagram.com/lezgotravel.id/?igshid=ZmVmZTY5ZGE%3D"><i class="fa-brands fa-instagram fa-2x m-2"></i></a>
-               <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+               <a href="https://wa.me/6289696106483"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
             </li>
          </ul>
        </li>
@@ -350,16 +349,9 @@
  
           <ul class="nav__ul">
              <li>
-                <a href="our-team/team.html">Our Team</a>
+                <a href="../our-team/team.html">Our Team</a>
              </li>
  
-             <li>
-                <a href="#">Terms of Use</a>
-             </li>
- 
-             <li>
-                <a href="#">Sitemap</a>
-             </li>
           </ul>
        </li>
     </ul>
